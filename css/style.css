@@ -44,6 +44,15 @@ body {
 	left: -3px;
 	bottom: -3px;
 }
+.white-box:hover .green-box2 {
+	background-color: yellow;
+}
+.white-box:hover .text {
+	color:red;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50% , -50%) rotate(0deg);
+}
 .logo {
     top:37px;
 	right:28px;
@@ -56,7 +65,8 @@ body {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-	animation: myanimation 3s infinite;
+	transition: all 1s ease 0.2s; 
+	animation: mykeyframe 3s infinite;
 }
 .text {
 	top: 50%;
@@ -82,5 +92,13 @@ body {
 	color: #FCEE21;
 	text-transform: uppercase;
 }
-
-
+.nav-a:hover {
+	color:red;
+	opacity: 0.5;
+	transition: all 0.3s ease 0.2s;
+}
+.text2:hover {
+	cursor: pointer;
+	color:red;
+	transition: all 0.4s linear 0.2s;
+}
